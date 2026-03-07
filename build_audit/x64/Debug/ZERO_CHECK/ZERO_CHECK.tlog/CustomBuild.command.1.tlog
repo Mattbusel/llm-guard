@@ -1,0 +1,10 @@
+^C:\USERS\MATTHEW\LLM-GUARD\BUILD_AUDIT\CMAKEFILES\384764D6F67A596888BC412FA02A4A2F\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Matthew/llm-guard -BC:/Users/Matthew/llm-guard/build_audit --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Matthew/llm-guard/build_audit/llm-guard.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
